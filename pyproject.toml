@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "async_api_client"
+version = "0.1.0"
+description = "Async API client with DTO support and sensitive field warnings"
+authors = [
+  { name="Your Name", email="you@example.com" }
+]
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.11"
+dependencies = [
+  "aiohttp>=3.8",
+  "dacite>=1.6",
+  "dataclasses-json>=0.5",
+  "api_dto@git+https://github.com/schbubba/api_dto.git"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
